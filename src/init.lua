@@ -5,7 +5,7 @@ local RunService = game:GetService("RunService")
 local GroupService = game:GetService("GroupService")
 local Players = game:GetService("Players")
 
-local Net = require(script.Parent.Parent:WaitForChild("Net"))
+local Net = require(script.Parent:WaitForChild("Net"))
 
 local requestFunction = Net:RemoteFunction("GroupJoinRewardRequest")
 local claimedFunction = Net:RemoteFunction("GroupJoinRewardHasClaimed")
